@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de la reserva</title>
+    <link rel="stylesheet" href="../assets/frontend.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Confirmación de la reserva</h1>
+        
+        <div class="section">
+            <h2>Detalles del vuelo de salida</h2>
+            <table>
+                <tr>
+                    <td>Origen: CAI</td>
+                    <td>Destino: AUH</td>
+                    <td>Tipo de cabina: Económica</td>
+                    <td>Fecha: 11/10/17</td>
+                    <td>Número de vuelo: 1908</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Detalles del vuelo de regreso</h2>
+            <table>
+                <tr>
+                    <td>Origen: AUH</td>
+                    <td>Destino: CAI</td>
+                    <td>Tipo de cabina: Económica</td>
+                    <td>Fecha: 11/15/17</td>
+                    <td>Número de vuelo: 1907</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Datos del pasajero:</h2>
+            <form>
+                <div class="form-row">
+                    <label>Nombres: <input type="text"></label>
+                    <label>Apellidos: <input type="text"></label>
+                    <label>Fecha de nacimiento: <input type="text" placeholder="dd/mm/yyyy"></label>
+                </div>
+                <div class="form-row">
+                    <label>Número Pasaporte: <input type="text"></label>
+                    <label>País de pasaporte: 
+                        <select>
+                            <option>Seleccionar</option>
+                        </select>
+                    </label>
+                    <label>Teléfono: <input type="text"></label>
+                </div>
+                <div class="form-row">
+                    <label>Foto Pasaporte: <input type="file"></label>
+                    <button type="button" class="btn btn-primary">Agregar Pasajero</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>Lista de pasajeros</h2>
+            <table class="full-width">
+                <thead>
+                    <tr>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Número de pasaporte</th>
+                        <th>País de pasaporte</th>
+                        <th>Teléfono</th>
+                        <th>Foto Pasaporte</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Aleik</td>
+                        <td>Hafezi</td>
+                        <td>11-05-1994</td>
+                        <td>3695005740</td>
+                        <td>Bahrain</td>
+                        <td>+573023457889</td>
+                        <td><button type="button" class="btn btn-secondary">Ver pasaporte</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-danger">Eliminar Pasajero</button>
+        </div>
+
+        <div class="buttons">
+            <button id="reservar-vuelo">Reservar Vuelo</button>
+            <button id="salir">Salir</button>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmación de Facturación</title>
+    <link rel="stylesheet" href="../assets/frontend.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Confirmación de Facturación</h1>
+        </header>
+        <main>
+            <div class="confirm-reservation">
+                <div class="billing-info">
+                    <p><strong>Valor Total:</strong> [ $ xxxxxxxx ]</p>
+                    <p><strong>Pagar con:</strong></p>
+                    <div class="radio-group">
+                        <div class="payment-option">
+                            <input type="radio" id="credit-card" name="payment" value="Tarjeta de Crédito">
+                            <label for="credit-card">Tarjeta de Crédito</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="cash" name="payment" value="Efectivo">
+                            <label for="cash">Efectivo</label>
+                        </div>
+                        <div class="payment-option">
+                            <input type="radio" id="payment-proof" name="payment" value="Comprobante de pago">
+                            <label for="payment-proof">Comprobante de pago</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="emit-tickets">Emitir boletos</button>
+                    <button id="cancel">Cancelar</button>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
